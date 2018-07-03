@@ -79,4 +79,9 @@ def remove_user(user):
     user_del = connect.delete_user(user)
     print(user_del)
 
+def issue_details(issueid):
+    issue = connect.issue(issueid)
+    print(issue.raw)
+    
+   
 print("This is edited by Ramya Munja")
